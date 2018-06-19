@@ -7,7 +7,7 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                TVMaze React
+                <h1>TVMaze React</h1>
                 <Search/>
             </div>
         );

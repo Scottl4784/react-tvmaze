@@ -5,7 +5,7 @@ import Result from './Result'
 
 class Search extends Component {
     state = {
-        showResult: true,
+        showResult: false,
         results: [
         {
           "name":"The Office",
@@ -59,7 +59,7 @@ class Search extends Component {
         return (
             <div>
                 <div>
-                    <button onClick={this.toggleShowResult}>{this.state.showResult ? 'Hide' : 'Search'}</button>
+                    <button onClick={this.toggleShowResult}>{this.state.showResult ? 'Hide' : 'Show'}</button>
                     {this.state.showResult ? <Result results={this.state.results} /> : null}
                 </div>
             </div>
